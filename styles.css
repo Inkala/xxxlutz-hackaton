@@ -61,6 +61,7 @@ p {
 
 .logo {
   justify-self: center;
+  margin-left: 50px;
 }
 
 .logo img {
@@ -127,11 +128,10 @@ p {
 
 .img-wrapper {
   width: 100%;
-  height: 40vh;
+  height: 38vh;
   border-radius: 10px;
   background-image: url(img/minimalist-home-design.jpg);
   background-size: cover;
-  height: 40vh;
   width: 100%;
 }
 
@@ -158,11 +158,8 @@ p {
 }
 
 .inspirations-wrapper {
-  display: grid;
-  grid-template-columns: 90vw;
-  grid-auto-rows: 240px;
-  grid-gap: 3%;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .inspiration-img {
@@ -171,6 +168,8 @@ p {
   background-size: cover;
   align-items: end;
   display: grid;
+  height: 210px;
+  margin-bottom: 15px;
 }
 
 .inspiration-text {
@@ -185,24 +184,24 @@ p {
   padding-right: 50%;
   font-size: 18px;
 }
-.i1 {
-  background-image: url('/img/loft-idea-bulb-chandelier-industrial-living-room-lighting.jpg');
+.i1{
+  background-image: url(img/loft-idea-bulb-chandelier-industrial-living-room-lighting.jpg);
 }
 
-.i2 {
-  background-image: url('/img/fdadc3f581816f5c41096ae2817392c2.jpg');
+.i2{
+  background-image: url(img/fdadc3f581816f5c41096ae2817392c2.jpg);
 }
-.i3 {
-  background-image: url('/img/feb13a39148cd6baea4809fcbcaf2745.jpg');
+.i3{
+  background-image: url(img/feb13a39148cd6baea4809fcbcaf2745.jpg);
 }
-.i4 {
-  background-image: url('/img/c38f624a2820366b19ad241286a78a7f.jpg');
+.i4{
+  background-image: url(img/c38f624a2820366b19ad241286a78a7f.jpg);
 }
-.i5 {
-  background-image: url('/img/ab0c1e69ee68df750483ecbd8ecfa1b4.jpg');
+.i5{
+  background-image: url(img/ab0c1e69ee68df750483ecbd8ecfa1b4.jpg);
 }
-.i6 {
-  background-image: url('/img/40798f4e765071426cab1b0b9b86931c.jpg');
+.i6{
+  background-image: url(img/40798f4e765071426cab1b0b9b86931c.jpg);
 }
 
 .inspirations-section h1 {
@@ -218,39 +217,50 @@ p {
 }
 
 #footer {
+  width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    background: lightgray;
+    color: black;
+    font-size: 13px;
+    padding: 8px;
+    font-weight: 500;
 }
 
-@media (min-width: 480px) {
-  /* Tablet */
-  #main {
-    max-width: 320px;
-  }
-}
 @media (min-width: 768px) {
   /* Laptops */
   .inspirations-wrapper {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .inspiration-img {
+    margin-bottom: 0; 
   }
   .inspirations-section h1 {
     margin-bottom: 2%;
   }
   #main {
-    max-width: 728px;
+    max-width: 100%;
+  }
+  .img-wrapper {
+    width: 100%;
+    height: 55vh;
+    border-radius: 10px;
+    background-image: url(img/minimalist-home-design.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: bottom;
   }
   .options {
     margin-bottom: 2%;
   }
   #footer {
-    margin-top: 5% !important;
+    margin-top: 2% !important;
   }
 }
 
-@media (min-width: 1824px) {
-  /* Big screens */
-  #main {
-    max-width: 1224px;
-  }
-}
+
 /* 
 // hacer menu vertical */
 
@@ -258,43 +268,4 @@ p {
   header {
     position: absolute;
   }
-}
-
-/*--- Borders ---*/
-.red-border {
-  border: 1px dashed #e29898;
-}
-
-.orange-border {
-  border: 1px dashed #ffc77d;
-}
-
-.yellow-border {
-  border: 1px dashed #f5c800;
-}
-
-.green-border {
-  border: 1px dashed #8ece8e;
-}
-
-.blue-border {
-  border: 1px dashed rgb(120, 172, 231);
-}
-
-.purple-border {
-  border: 1px dashed rgb(200, 105, 255);
-}
-
-#footer {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  background: lightgray;
-  color: black;
-  font-size: 13px;
-  margin-top: 15%;
-  justify-items: center;
-  padding: 1%;
-  font-weight: 500;
 }
