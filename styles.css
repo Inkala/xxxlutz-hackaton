@@ -37,12 +37,9 @@ h1, h2, h3, p {
   }
 }
 
-@media (min-width: 1224px) { /* Big screens */
+@media (min-width: 1824px) { /* Big screens */
   body {
     max-width: 1224px;
     background-color: red;
   }
 }
-
-/* @media (min-width: 1824px) {
-} */
