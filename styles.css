@@ -1,3 +1,9 @@
+:root {
+  --accent-color: #e10717;
+  --black: #111;
+  --gray: #555454;
+}
+
 /* ---- reset ---- */
 
 html {
@@ -13,35 +19,48 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  background-color: #111;
+  color: var(--black);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 147%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
-
-@media (min-width: 480px) { /* Tablet */
-  body {
-    max-width: 320px;
-    background-color: green;
-  }
-}
-@media (min-width: 768px) { /* Laptops */
-  body {
-    max-width: 728px;
-    background-color: blue;
-  }
+#header {
+  height: 40px;
 }
 
-@media (min-width: 1824px) { /* Big screens */
-  body {
-    max-width: 1224px;
-    background-color: red;
-  }
+#main {
+  height: 42vh;
+  padding: 3%;
+}
+
+.img-wrapper {
+  border-radius: 10px;
+  background-image: url(img/home-design.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.options {
+  background-color: var(--gray);
+  color: white;
+}
+
+.options ul {
+  display: flex;
+}
+
+.options li {
+  list-style: none;
 }
 
 .inspirations-section{
@@ -70,4 +89,62 @@ h1, h2, h3, p {
   line-height: normal;
   letter-spacing: 0.39px;
   color: #000000;
+}
+
+@media (min-width: 480px) {
+  /* Tablet */
+  #main {
+    max-width: 320px;
+  }
+}
+@media (min-width: 768px) {
+  /* Laptops */
+  #main {
+    max-width: 728px;
+  }
+}
+
+@media (min-width: 1824px) {
+  /* Big screens */
+  #main {
+    max-width: 1224px;
+  }
+}
+
+
+/*--- Borders ---*/
+.red-border {
+  min-width: 10px;
+  min-height: 10px;
+  border: 1px dashed #e29898;
+}
+
+.orange-border {
+  min-width: 10px;
+  min-height: 10px;
+  border: 1px dashed #ffc77d;
+}
+
+.yellow-border {
+  min-width: 10px;
+  min-height: 10px;
+  border: 1px dashed #f5c800;
+}
+
+.green-border {
+  min-width: 10px;
+  min-height: 10px;
+  border: 1px dashed #8ece8e;
+}
+
+.blue-border {
+  min-width: 10px;
+  min-height: 10px;
+  border: 1px dashed rgb(120, 172, 231);
+}
+
+.purple-border {
+  min-width: 10px;
+  min-height: 10px;
+  border: 1px dashed rgb(200, 105, 255);
 }

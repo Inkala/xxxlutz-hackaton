@@ -1,5 +1,7 @@
 'use strict';
+
 const main = () => {
-  console.log("test")
+  console.log("Main");
+  carousel();
 }
 window.addEventListener('load', main);
