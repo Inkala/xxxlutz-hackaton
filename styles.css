@@ -72,6 +72,7 @@ p {
   margin-top: 9px;
   padding: 12px 20px;
   width: 50%;
+  max-width: 350px;
   border-radius: 0 8px 8px 0;
   background-color: rgba(225, 223, 222, 0.92);
   display: grid;
