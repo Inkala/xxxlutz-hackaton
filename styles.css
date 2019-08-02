@@ -1,0 +1,48 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+
+@media (min-width: 480px) { /* Tablet */
+  body {
+    max-width: 320px;
+    background-color: green;
+  }
+}
+@media (min-width: 768px) { /* Laptops */
+  body {
+    max-width: 728px;
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1224px) { /* Big screens */
+  body {
+    max-width: 1224px;
+    background-color: red;
+  }
+}
+
+/* @media (min-width: 1824px) {
+} */
