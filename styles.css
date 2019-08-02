@@ -173,6 +173,100 @@ p {
     max-width: 1224px;
   }
 }
+/* 
+// hacer menu vertical */
+
+
+
+#header {
+  margin:auto;
+  width:100%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+ ul, ol {
+  list-style:none;
+}
+
+.nav > li {
+  float:left;
+}
+
+.nav li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+.nav li a:hover {
+  background-color:#434343;
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.nav li:hover > ul {
+  display:block;
+}
+
+.nav li ul li {
+  position:relative;
+}
+
+.nav li ul li ul {
+  right:-140px;
+  top:0px;
+} 
+
+@media only screen and (max-width : 640px) {
+
+	header {
+
+		position: absolute;
+
+	}
+
+	#menu-icon {
+
+		display:inline-block;
+
+	}
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
+
+
 
 /*--- Borders ---*/
 .red-border {
