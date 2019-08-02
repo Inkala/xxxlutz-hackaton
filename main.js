@@ -7,12 +7,11 @@ const main = () => {
 
   burger.addEventListener('click', event => {
     nav.classList.toggle('collapse-vert');
-    console.log(event);
   });
 
   subnavs.forEach(subnav  => {
     subnav.addEventListener('click', () => {
-      console.log(subnav.children)
+      subnav.classList.toggle('collapse-hor');
     })
   });
 };
