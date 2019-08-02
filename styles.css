@@ -38,7 +38,82 @@ p {
   position: fixed;
   width: 100%;
   top: 0;
+  background-color: white;
 }
+
+#header ul {
+  margin: 0;
+  padding: 0;
+}
+
+#header li {
+  list-style: none;
+}
+
+#header .menu {
+  display: grid;
+  grid-template-columns: auto 11fr auto auto auto;
+  padding: 0 15px;
+  gap: 10px;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.logo {
+  justify-self: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+#header .nav {
+  margin-top: 5px;
+  padding: 12px 15px;
+  width: 50%;
+  border-radius: 0 8px 8px 0;
+  background-color: rgba(225, 223, 222, 0.92);
+  display: grid;
+  gap: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+#header .nav a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+#header .nav .active {
+  color: var(--accent-color);
+}
+
+.nav small {
+  color: var(--accent-color);
+  font-weight: normal;
+  text-transform: initial;
+}
+
+#header .collapse-vert {
+  width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  margin-left: -2px;
+  transition: all 0.25s;
+}
+
+.subnav {
+  overflow: hidden;
+}
+
+#header .collapse-hor ul {
+  height: 0;
+}
+
+/*--- Main ---*/
 
 #main {
   margin-top: 45px;
@@ -73,7 +148,7 @@ p {
   list-style: none;
 }
 
-.inspirations-section{
+.inspirations-section {
   margin: 0 5%;
 }
 
@@ -85,7 +160,7 @@ p {
   justify-items: center;
 }
 
-.inspiration-img{
+.inspiration-img {
   width: 100%;
   border-radius: 8px;
   background-size: cover;
@@ -93,7 +168,7 @@ p {
   display: grid;
 }
 
-.inspiration-text{
+.inspiration-text {
   width: 100%;
   height: 60px;
   background: rgba(255, 255, 255, 0.81);
@@ -125,7 +200,6 @@ p {
   background-image: url(img/40798f4e765071426cab1b0b9b86931c.jpg);
 }
 
-
 .inspirations-section h1 {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
@@ -139,7 +213,6 @@ p {
 }
 
 #footer {
-
 }
 
 @media (min-width: 480px) {
@@ -176,132 +249,34 @@ p {
 /* 
 // hacer menu vertical */
 
-
-
-#header {
-  margin:auto;
-  width:100%;
-  font-family:Arial, Helvetica, sans-serif;
+@media only screen and (max-width: 640px) {
+  header {
+    position: absolute;
+  }
 }
-
- ul, ol {
-  list-style:none;
-}
-
-.nav > li {
-  float:left;
-}
-
-.nav li a {
-  background-color:#000;
-  color:#fff;
-  text-decoration:none;
-  padding:10px 12px;
-  display:block;
-}
-
-.nav li a:hover {
-  background-color:#434343;
-}
-
-.nav li ul {
-  display:none;
-  position:absolute;
-  min-width:140px;
-}
-
-.nav li:hover > ul {
-  display:block;
-}
-
-.nav li ul li {
-  position:relative;
-}
-
-.nav li ul li ul {
-  right:-140px;
-  top:0px;
-} 
-
-@media only screen and (max-width : 640px) {
-
-	header {
-
-		position: absolute;
-
-	}
-
-	#menu-icon {
-
-		display:inline-block;
-
-	}
-
-	nav ul, nav:active ul { 
-
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
-
-	}
-
-	nav li {
-
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-
-	}
-
-	nav:hover ul {
-
-		display: block;
-
-	}
-
-
 
 /*--- Borders ---*/
 .red-border {
-  min-width: 10px;
-  min-height: 10px;
   border: 1px dashed #e29898;
 }
 
 .orange-border {
-  min-width: 10px;
-  min-height: 10px;
   border: 1px dashed #ffc77d;
 }
 
 .yellow-border {
-  min-width: 10px;
-  min-height: 10px;
   border: 1px dashed #f5c800;
 }
 
 .green-border {
-  min-width: 10px;
-  min-height: 10px;
   border: 1px dashed #8ece8e;
 }
 
 .blue-border {
-  min-width: 10px;
-  min-height: 10px;
   border: 1px dashed rgb(120, 172, 231);
 }
 
 .purple-border {
-  min-width: 10px;
-  min-height: 10px;
   border: 1px dashed rgb(200, 105, 255);
 }
 
