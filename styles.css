@@ -34,20 +34,23 @@ p {
 }
 
 #header {
-  height: 40px;
+  height: 45px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 #main {
-  height: 42vh;
+  margin-top: 45px;
   padding: 3%;
 }
 
 .img-wrapper {
-  border-radius: 10px;
-  background-image: url(img/home-design.jpg);
-  background-size: cover;
-  height: 100%;
   width: 100%;
+  height: 40vh;
+  border-radius: 10px;
+  background-image: url(img/minimalist-home-design.jpg);
+  background-size: cover;
 }
 
 .options {
@@ -57,17 +60,21 @@ p {
 
 .options ul {
   display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  padding: 5px 25px;
+  margin: 0;
 }
 
 .options li {
   list-style: none;
 }
 
-.inspirations-section{
+.inspirations-section {
   margin: 0 10%;
 }
 
-.inspirations-wrapper{
+.inspirations-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -75,12 +82,12 @@ p {
   justify-items: center;
 }
 
-.inspirations-wrapper img{
+.inspirations-wrapper img {
   width: 100%;
   border-radius: 8px;
 }
 
-.inspirations-section h1{
+.inspirations-section h1 {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -89,6 +96,10 @@ p {
   line-height: normal;
   letter-spacing: 0.39px;
   color: #000000;
+}
+
+#footer {
+
 }
 
 @media (min-width: 480px) {
@@ -110,7 +121,6 @@ p {
     max-width: 1224px;
   }
 }
-
 
 /*--- Borders ---*/
 .red-border {
